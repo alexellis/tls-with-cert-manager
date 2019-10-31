@@ -6,7 +6,7 @@ In this learn guide we will obtain a free TLS certificate LetsEncrypt for an app
 
 * Create a Kubernetes cluster
 
-    You can use an existing cluster, or if you don't have one yet, here's a couple of options.
+    You can use an existing cluster, or if you don't have one yet, here's a couple of options for using [k3s](https://k3s.io), a light-weight Kubernetes distribution from Rancher.
 
     Create a VM on your favourite cloud and then download [k3sup](https://k3sup.dev). You can then run `k3sup install --ip $IP --user $USER` which will use `ssh` to log into the remote computer and install Kubernetes. You can use a Civo Instance if you like, just make sure you add your `ssh` key when setting up.
 
