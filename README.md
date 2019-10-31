@@ -1,6 +1,6 @@
 # Get a TLS cert for your application with JetStack's cert-manager
 
-In this learn guide we will obtain a free TLS certificate LetsEncrypt for an application we have running on our Kubernetes cluster.
+In this learn guide we will obtain a free TLS certificate LetsEncrypt for an application we have running on our Kubernetes cluster. The sample application will be written in [Node.js](https://nodejs.org/en/) using the popular microservices framework [Express.js](https://expressjs.com).
 
 ## Pre-reqs
 
