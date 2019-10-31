@@ -215,7 +215,15 @@ You now have a Node.js website deployed with a free TLS certificate from LetsEnc
 
 ### Customise the example
 
-To customise the example, simply edit the code in the `expressjs` folder, run `docker build` and `docker push` followed by updating the `yaml/dep.yml` file to replace the `image:` with your new version and apply the YAML file again with `kubectl apply -f yaml/dep.yml`.
+You can customise the example using this workflow:
+
+* Edit the Node.js code in `index.js` or `routes/index.js`
+* Build a new container image under your username (`docker build -t yourname/image:version .`)
+* Push the image to the Docker Hub or a similar registry (`docker push yourname/image:version`)
+* Update the `image: ` in `dep.yaml`
+* Run `kubectl apply -f dep.yaml`
+
+The TLS certificate, Ingress and Issuer all stay the same between iterations.
 
 ### Keep learning
 
