@@ -12,12 +12,12 @@ In this learn guide we will obtain a free TLS certificate LetsEncrypt for an app
 
     The other option with Civo, if you're part of the [#Kube100 program](https://www.civo.com/blog/kube100-is-here) is to use the dashboard to create a cluster.
 
-* [`k3sup` ('ketchup')](https://k3sup.dev/) - get k3s and helm charts with a single command
 
-    We'll use `k3sup` to install `cert-manager`
+* [`arkade`](https://get-arkade.dev) - Install kubernetes charts and apps with one command
+    We'll use `arkade` to install `cert-manager`
 
     ```
-    curl -SLsf https://get.k3sup.dev | sudo sh
+    curl -SLsf https://dl.get-arkade.dev | sudo sh
     ```
 
     Available for MacOS, Windows, and Linux.
@@ -63,7 +63,7 @@ Added cert-manager v0.11.0 to Kubernetes cluster graph-block
 If you're not using Civo's k3s service then run the following instead:
 
 ```
-k3sup app install cert-manager 
+arkade install cert-manager 
 ```
 
 ### Deploy the sample app
@@ -231,4 +231,5 @@ Find out more about the projects we used today:
 
 * [cert-manager](https://github.com/jetstack/cert-manager/)
 * [k3sup](https://k3sup.dev/)
+* [arkade](https://get-arkade.dev)
 * [Civo #Kube100 program](https://www.civo.com/blog/kube100-is-here)
